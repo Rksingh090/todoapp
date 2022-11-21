@@ -1,0 +1,90 @@
+.List {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 100vh;
+    gap: 10px;
+    padding: 10px;
+}
+/* List Heading  */
+.ListHeading {
+    font-family: sans-serif;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px #d0d0d0;
+}
+
+/* Listitems  */
+.ListContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    height: 80%;
+    border-radius: 10px;
+}
+
+.ListItems::-webkit-scrollbar {
+    display: none;
+}
+.ListItems {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 7px;
+    padding: 10px 0;
+    background-color: white;
+}
+.ListItems > * {
+    width: 92%;
+    border-radius: 7px;
+    box-shadow: 1px 1px 4px #d0d0d0;
+    background-color: rgb(255, 255, 255);
+    margin: 7px auto;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 6px 8px;
+    cursor: pointer;
+}
+.AddTask, .AddTaskForm{
+    width: 100%;
+    padding: 4px;
+    background: transparent;
+}
+.AddTask > button {
+    border: none;
+    outline: none;
+    padding: 8px 0;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(211, 211, 211);
+}
+.AddTaskForm > input {
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    width: 100%;
+    font-size: 14px;
+    cursor: text;
+    border-radius: 5px;
+    color: rgb(59, 59, 59);
+    /* background-color: rgb(244, 244, 244); */
+    box-shadow: inset 1px 1px 4px #d0d0d0;
+}
+
+/* ListUtils  */
+.ListUtils {
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 4px #d0d0d0;
+}
